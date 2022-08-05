@@ -1,0 +1,31 @@
+{
+  "name": "next-app",
+  "version": "1.0.0",
+  "description": "This is an interactive pricing component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Pricing-component"
+  },
+  "keywords": [
+    "next-js",
+    "pricing-component",
+    "javascript",
+    "sass",
+    "scss",
+    "css",
+    "static-site"
+  ],
+  "author": "Hritick Bhushan",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.54.3"
+  }
+}
