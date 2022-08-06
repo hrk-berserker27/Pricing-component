@@ -18,18 +18,23 @@ export default function App() {
         <title>Frontend Mentor | Interactive pricing component</title>
       </Head>
       <main>
-        <header>
+        <header className="main-header">
           <h1>Simple, traffic-based pricing</h1>
           <p>Sign-up for our 30-day trial.No credit card required.</p>
         </header>
-        <section>
+        <section className="slider-section">
           <header>
-            <span>100K Pageviews</span> <span>$16.00 /month </span>
+            <span>100K Pageviews</span>
+            <span className="price-container">
+              <span className="price">$16.00 </span>
+              <span>/</span>
+              <span>month</span>
+            </span>
           </header>
-          <p className="slider-container">
+          <div className="slider-container">
             Monthly Billing <div className="slider"></div>Yearly Billing
             <span>25% discount</span>
-          </p>
+          </div>
           <footer>
             <div className="features">
               <span>Unlimited websites </span>
