@@ -26,12 +26,12 @@ export default function App() {
           <header>
             <span>100K Pageviews</span>
             <span className="price-container">
-              <span className="price">$16.00 </span>
-              <span>/</span>
-              <span>month</span>
+              <span className="price">$16.00</span>
+              <span>&nbsp;/&nbsp;month</span>
             </span>
           </header>
-          <div className="slider-container">
+          <div className="slider"></div>
+          <div className="toggle-container">
             Monthly Billing <div className="slider"></div>Yearly Billing
             <span>25% discount</span>
           </div>
