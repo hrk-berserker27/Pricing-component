@@ -20,7 +20,8 @@ export default function App() {
       <main>
         <header className="main-header">
           <h1>Simple, traffic-based pricing</h1>
-          <p>Sign-up for our 30-day trial.No credit card required.</p>
+          <p>Sign-up for our 30-day trial.</p>
+          <p>No credit card required.</p>
         </header>
         <section className="slider-section">
           <header>
@@ -43,9 +44,39 @@ export default function App() {
           </div>
           <footer>
             <div className="features">
-              <span>Unlimited websites </span>
-              <span>100% data ownership</span>
-              <span>Email reports</span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    strokeWidth="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                Unlimited websites{" "}
+              </span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    strokeWidth="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                100% data ownership
+              </span>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                  <path
+                    fill="none"
+                    stroke="#10D8C4"
+                    strokeWidth="2"
+                    d="M1 4.134l1.907 1.908L7.949 1"
+                  />
+                </svg>
+                Email reports
+              </span>
             </div>
             <div className="button-container">
               <button>Start my trial</button>

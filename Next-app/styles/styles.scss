@@ -15,4 +15,49 @@ main {
     overflow: hidden;
     border: 2px solid;
     width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    border: 2px solid;
+    padding-top: 8.5em;
+    text-align: center;
+    font-size: 1.28rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../public/images/bg-pattern.svg");
+    padding-bottom: 6.2em;
+    width: 100%;
+
+    p {
+        font-size: 1.67rem;
+        padding-top: 0.7em;
+    }
+
+    p:last-child {
+        padding-top: 0.4em;
+    }
+}
+
+.slider-section {
+    border: 2px solid;
+    text-align: center;
+    padding-top: 4.5em;
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    border-radius: 1.5em;
+
+    span {
+        display: block;
+    }
+
+    span:first-child {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 4.8px;
+    }
 }
