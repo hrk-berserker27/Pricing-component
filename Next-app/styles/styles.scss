@@ -14,22 +14,27 @@ main {
     width: 100vw;
     overflow: hidden;
     border: 2px solid;
-    width: 750px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url("../public/images/bg-pattern.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-header {
-    border: 2px solid;
     padding-top: 8.5em;
     text-align: center;
     font-size: 1.28rem;
     display: flex;
     flex-direction: column;
-    background-image: url("../public/images/bg-pattern.svg");
+    background-image: url(../public/images/pattern-circles.svg);
     padding-bottom: 6.2em;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 67%;
+    background-size: 40%;
 
     p {
         font-size: 1.67rem;
@@ -44,11 +49,13 @@ main {
 .slider-section {
     border: 2px solid;
     text-align: center;
-    padding-top: 4.5em;
+    padding-top: 4.75em;
     display: flex;
     flex-direction: column;
     width: 88%;
     border-radius: 1.5em;
+    position: relative;
+    gap: 3.1em;
 
     span {
         display: block;
@@ -58,6 +65,37 @@ main {
         font-size: 1.4rem;
         text-transform: uppercase;
         font-weight: 600;
-        letter-spacing: 4.8px;
+        letter-spacing: 5px;
+        padding-right: 5px;
     }
+
+    .price-container {
+        position: absolute;
+    }
+
+    .slider {
+        display: grid;
+        place-items: center;
+
+        .svg-container {
+            padding: 1rem;
+            background-color: map-get(d.$color-bucket, "Discount Text");
+            width: 5.05em;
+            height: 5.05em;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+
+        .bar {
+            position: absolute;
+            width: 86%;
+            height: 1rem;
+            border-radius: 1em;
+            left: 2.7em;
+            background-color: map-get(d.$color-bucket, "Full Slider Bar");
+        }
+    }
+
+
 }
