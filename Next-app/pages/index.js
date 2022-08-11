@@ -47,7 +47,10 @@ export default function App() {
             </span>
           </div>
           <div className="toggle-container">
-            Monthly Billing <div className="slider"></div>Yearly Billing
+            <span>Monthly Billing</span>
+            <div className="toggle"></div>
+            <div className="slider"></div>
+            <span>Yearly Billing</span>
             <span>-25%</span>
           </div>
           <footer>
