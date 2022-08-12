@@ -46,7 +46,6 @@ main {
 }
 
 .slider-section {
-    border: 2px solid;
     text-align: center;
     padding-top: 4.75em;
     display: flex;
@@ -75,18 +74,17 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1em;
+        gap: 0.4em;
 
         span:first-child {
             font-size: 4rem;
             font-weight: 800;
             letter-spacing: -1.5px;
-            transform: translateX(10px)
+            transform: translateX(-3px)
         }
 
         span:last-child {
             font-size: 1.8rem;
-            padding-right: 0.7em;
         }
     }
 
@@ -121,24 +119,36 @@ main {
         align-items: center;
         font-size: 1.5rem;
         letter-spacing: 2px;
-        gap: 0.2em;
+        gap: 0.8em;
         padding: 0.2em 0em;
         word-spacing: 0px;
 
         span:first-child {
             text-transform: capitalize;
-            letter-spacing: 0px;
-            transform: translateX(2.35em);
-            letter-spacing: 0.5px;
-            word-spacing: 1px;
+            letter-spacing: 0.8px;
+            transform: translateX(40px);
         }
 
         .toggle {
-            width: 3.7em;
-            height: 1.9em;
+            width: 3.6em;
+            height: 2em;
             border-radius: 1em;
-            margin-left: 2.8em;
             background-color: map-get(d.$color-bucket, "Toggle Background");
+            transform: translateX(1.6em);
+        }
+
+        .billing {
+            letter-spacing: 0.5px;
+            transform: translateX(1em);
+        }
+
+        .discount {
+            display: inline-block;
+            border-radius: 1em;
+            transform: translateX(1em);
+            font-size: 20px;
+            padding: 4px 12px;
+            letter-spacing: 0px;
         }
     }
 }

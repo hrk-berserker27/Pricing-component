@@ -50,8 +50,8 @@ export default function App() {
             <span>Monthly Billing</span>
             <div className="toggle"></div>
             <div className="slider"></div>
-            <span>Yearly Billing</span>
-            <span>-25%</span>
+            <span className="billing">Yearly Billing</span>
+            <span className="discount">-25%</span>
           </div>
           <footer>
             <div className="features">
