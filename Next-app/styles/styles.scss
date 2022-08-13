@@ -18,42 +18,49 @@ main {
     flex-direction: column;
     align-items: center;
     background-image: url("../public/images/bg-pattern.svg");
-    background-size: cover;
+    background-size: 320%;
     background-repeat: no-repeat;
+    padding-bottom: 11em;
 }
 
 .main-header {
-    padding-top: 8.5em;
+    padding-top: 8.8em;
     text-align: center;
-    font-size: 1.28rem;
+    font-size: 1.26rem;
     display: flex;
     flex-direction: column;
     background-image: url(../public/images/pattern-circles.svg);
-    padding-bottom: 6.2em;
+    padding-bottom: 6.5em;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center 67%;
-    background-size: 40%;
+    background-position: center 63.5%;
+    background-size: 39%;
+    color: map-get(d.$color-bucket, "Text & CTA Background");
 
     p {
         font-size: 1.67rem;
         padding-top: 0.7em;
+        color: map-get(d.$color-bucket, "Text");
+        font-weight: 600;
     }
 
     p:last-child {
         padding-top: 0.4em;
+
     }
 }
 
 .slider-section {
     text-align: center;
-    padding-top: 4.75em;
+    padding-top: 4.5em;
     display: flex;
     flex-direction: column;
     width: 88%;
     border-radius: 1.5em;
     position: relative;
     gap: 3em;
+    background-color: map-get(d.$color-bucket, "Pricing Component Background");
+    box-shadow: 0 0.2px 100px hsl(225, 20%, 80%);
 
     span {
         display: block;
@@ -62,14 +69,16 @@ main {
     span:first-child {
         font-size: 1.4rem;
         text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 5px;
+        font-weight: 800;
+        letter-spacing: 4.4px;
         padding-right: 5px;
+        color: map-get(d.$color-bucket, "Text");
+
     }
 
     .price-container {
         position: absolute;
-        top: 17.8em;
+        top: 17.5em;
         width: 100%;
         display: flex;
         align-items: center;
@@ -80,17 +89,20 @@ main {
             font-size: 4rem;
             font-weight: 800;
             letter-spacing: -1.5px;
-            transform: translateX(-3px)
+            transform: translateX(-3px);
+            color: map-get(d.$color-bucket, "Text & CTA Background");
         }
 
         span:last-child {
             font-size: 1.8rem;
+            color: map-get(d.$color-bucket, "Text");
         }
     }
 
     .slider {
         display: grid;
         place-items: center;
+
 
         .svg-container {
             padding: 1rem;
@@ -104,10 +116,10 @@ main {
 
         .bar {
             position: absolute;
-            width: 86%;
+            width: 84.5%;
             height: 1rem;
             border-radius: 1em;
-            left: 2.7em;
+            left: 3.2em;
             background-color: map-get(d.$color-bucket, "Full Slider Bar");
         }
     }
@@ -120,26 +132,43 @@ main {
         font-size: 1.5rem;
         letter-spacing: 2px;
         gap: 0.8em;
-        padding: 0.2em 0em;
+        padding: 0.18em 0em;
         word-spacing: 0px;
+        padding-bottom: 1.2em;
+
 
         span:first-child {
             text-transform: capitalize;
             letter-spacing: 0.8px;
-            transform: translateX(40px);
+            transform: translateX(44px);
+            font-weight: 600;
         }
 
         .toggle {
             width: 3.6em;
-            height: 2em;
+            height: 1.9em;
             border-radius: 1em;
             background-color: map-get(d.$color-bucket, "Toggle Background");
-            transform: translateX(1.6em);
+            transform: translateX(1.8em);
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+
+            .circle {
+                border: 2px solid;
+                width: 1.2em;
+                height: 1.2em;
+                border-radius: 1em;
+                background-color: map-get(d.$color-bucket, "Empty Slider Bar");
+                border-color: map-get(d.$color-bucket, "Text");
+            }
         }
 
         .billing {
-            letter-spacing: 0.5px;
-            transform: translateX(1em);
+            letter-spacing: 0.4px;
+            transform: translateX(1.25em);
+            font-weight: 600;
+            color: map-get(d.$color-bucket, "Text");
         }
 
         .discount {
@@ -147,8 +176,58 @@ main {
             border-radius: 1em;
             transform: translateX(1em);
             font-size: 20px;
-            padding: 4px 12px;
+            padding: 4px 15px;
             letter-spacing: 0px;
+            font-weight: 800;
+            background-color: map-get(d.$color-bucket, "Discount Background");
+            color: map-get(d.$color-bucket, "Discount Text");
+        }
+    }
+
+    footer {
+        border-top: 1.5px solid map-get(d.$color-bucket, "Toggle Background");
+        padding-top: 2.7em;
+
+
+        .features {
+            color: map-get(d.$color-bucket, "Text");
+            display: flex;
+            flex-direction: column;
+            gap: 0.55em;
+
+            span {
+                text-transform: none;
+                font-weight: 600;
+                letter-spacing: 0px;
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    display: block;
+                    transform: translate(-12px);
+                }
+            }
+
+
+        }
+
+        .button-container {
+            padding: 3.6em 0;
+            padding-right: 5px;
+            padding-bottom: 4em;
+
+            button {
+                border: 0;
+                background-color: map-get(d.$color-bucket, "Text & CTA Background");
+                width: 14.2em;
+                height: 3.4em;
+                font-size: 1.5rem;
+                font-weight: 800;
+                border-radius: 2em;
+                color: map-get(d.$color-bucket, "CTA Text");
+            }
         }
     }
 }

@@ -48,7 +48,9 @@ export default function App() {
           </div>
           <div className="toggle-container">
             <span>Monthly Billing</span>
-            <div className="toggle"></div>
+            <div className="toggle">
+              <div className="circle"></div>
+            </div>
             <div className="slider"></div>
             <span className="billing">Yearly Billing</span>
             <span className="discount">-25%</span>
@@ -56,7 +58,12 @@ export default function App() {
           <footer>
             <div className="features">
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  viewBox="0 -6 15 20"
+                >
                   <path
                     fill="none"
                     stroke="#10D8C4"
@@ -64,10 +71,15 @@ export default function App() {
                     d="M1 4.134l1.907 1.908L7.949 1"
                   />
                 </svg>
-                Unlimited websites{" "}
+                Unlimited websites
               </span>
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  viewBox="0 -6 15 20"
+                >
                   <path
                     fill="none"
                     stroke="#10D8C4"
@@ -78,7 +90,12 @@ export default function App() {
                 100% data ownership
               </span>
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  viewBox="0 -6 15 20"
+                >
                   <path
                     fill="none"
                     stroke="#10D8C4"
