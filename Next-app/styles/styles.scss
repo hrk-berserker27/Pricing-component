@@ -23,6 +23,8 @@ main {
 
     @media (min-width: 1000px) {
         max-width: 100vw;
+        background-size: 130%;
+        background-position: 30% -7.5%;
     }
 }
 
@@ -45,6 +47,9 @@ main {
         flex-wrap: wrap;
         align-items: center;
         padding-top: 5em;
+        background-size: 11.5%;
+        background-position: center 55%;
+        padding-bottom: 4.5em;
 
         h1 {
             flex-basis: 100%;
@@ -97,6 +102,22 @@ main {
     background-color: map-get(d.$color-bucket, "Pricing Component Background");
     box-shadow: 0 0.2px 100px hsl(225, 20%, 80%);
 
+    @media (min-width: 1000px) {
+        width: 42vw;
+        border-radius: 1em;
+        padding-top: 0;
+        gap: 1.5em;
+
+        header {
+            display: flex;
+            padding-left: 2.6em;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2.7em;
+            padding-right: 3.2em;
+        }
+    }
+
     span {
         display: block;
     }
@@ -109,6 +130,13 @@ main {
         padding-right: 5px;
         color: map-get(d.$color-bucket, "Text");
 
+        @media (min-width: 1000px) {
+
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            padding-right: 0;
+        }
+
     }
 
     .price-container {
@@ -120,17 +148,31 @@ main {
         justify-content: center;
         gap: 0.4em;
 
+        @media (min-width: 1000px) {
+            position: static;
+            width: auto;
+        }
+
         span:first-child {
             font-size: 4rem;
             font-weight: 800;
             letter-spacing: -1.5px;
             transform: translateX(-3px);
             color: map-get(d.$color-bucket, "Text & CTA Background");
+
+            @media (min-width: 1000px) {
+                font-size: 2.5rem;
+                transform: none;
+            }
         }
 
         span:last-child {
             font-size: 1.8rem;
             color: map-get(d.$color-bucket, "Text");
+
+            @media (min-width: 1000px) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -146,6 +188,17 @@ main {
             height: 5.05em;
             border-radius: 50%;
             z-index: 2;
+
+            @media (min-width:1000px) {
+                width: 2.5em;
+                height: 2.5em;
+
+                svg {
+                    width: 50px;
+                    height: 50px;
+                    transform: translateX(-0.5em) translateY(-15%);
+                }
+            }
         }
 
 
@@ -156,6 +209,12 @@ main {
             border-radius: 1em;
             left: 3.2em;
             background-color: map-get(d.$color-bucket, "Full Slider Bar");
+
+            @media (min-width: 1000px) {
+                left: 2.9em;
+                width: 82.5%;
+                height: 0.5em;
+            }
         }
     }
 
@@ -171,12 +230,25 @@ main {
         word-spacing: 0px;
         padding-bottom: 1.2em;
 
+        @media (min-width: 1000px) {
+            margin-top: 0em;
+            font-size: 12px;
+            padding: 0;
+            gap: 0;
+            padding-top: 1.05em;
+        }
 
         span:first-child {
             text-transform: capitalize;
             letter-spacing: 0.8px;
             transform: translateX(44px);
             font-weight: 600;
+
+            @media (min-width: 1000px) {
+                transform: none;
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
         }
 
         .toggle {
@@ -188,6 +260,13 @@ main {
             display: flex;
             align-items: center;
             padding-left: 8px;
+
+            @media (min-width: 1000px) {
+                padding-left: 3px;
+                transform: none;
+                height: 2em;
+                margin-left: 2.1em;
+            }
 
             .circle {
                 border: 2px solid;
@@ -204,6 +283,11 @@ main {
             transform: translateX(1.25em);
             font-weight: 600;
             color: map-get(d.$color-bucket, "Text");
+
+            @media (min-width: 1000px) {
+                transform: none;
+                letter-spacing: 0;
+            }
         }
 
         .discount {
@@ -216,6 +300,11 @@ main {
             font-weight: 800;
             background-color: map-get(d.$color-bucket, "Discount Background");
             color: map-get(d.$color-bucket, "Discount Text");
+
+            @media (min-width: 1000px) {
+                font-size: 10px;
+                padding: 2px;
+            }
         }
     }
 
