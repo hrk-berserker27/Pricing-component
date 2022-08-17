@@ -104,17 +104,17 @@ main {
 
     @media (min-width: 1000px) {
         width: 42vw;
-        border-radius: 1em;
+        border-radius: 0.5em;
         padding-top: 0;
         gap: 1.5em;
 
         header {
             display: flex;
-            padding-left: 2.6em;
+            padding-left: 2.7em;
             justify-content: space-between;
             align-items: center;
             padding-top: 2.7em;
-            padding-right: 3.2em;
+            padding-right: 3em;
         }
     }
 
@@ -162,7 +162,7 @@ main {
 
             @media (min-width: 1000px) {
                 font-size: 2.5rem;
-                transform: none;
+                transform: translateX(-2px);
             }
         }
 
@@ -235,7 +235,11 @@ main {
             font-size: 12px;
             padding: 0;
             gap: 0px;
-            border: 2px solid;
+            justify-content: flex-start;
+            width: 100%;
+            padding-left: 16.4em;
+            padding-top: 5px;
+            gap: 1em;
         }
 
         span:first-child {
@@ -245,14 +249,14 @@ main {
             font-weight: 600;
 
             @media (min-width: 1000px) {
-                transform: translateX(-44px);
                 font-size: 12px;
                 letter-spacing: 0px;
+                transform: translateX(-44px);
             }
         }
 
         .toggle {
-            width: 3.6em;
+            width: 3.65em;
             height: 1.9em;
             border-radius: 1em;
             background-color: map-get(d.$color-bucket, "Toggle Background");
@@ -263,9 +267,8 @@ main {
 
             @media (min-width: 1000px) {
                 padding-left: 3px;
-                transform: translateX(-1.8em);
-                height: 2em;
-                margin-left: 2.1em;
+                height: 1.7em;
+                transform: translateX(-3.3em) translateY(1px);
             }
 
             .circle {
@@ -280,23 +283,21 @@ main {
 
         .billing {
             letter-spacing: 0.4px;
-            transform: translateX(1.25em);
+            transform: translateX(-1.25em);
             font-weight: 600;
             color: map-get(d.$color-bucket, "Text");
 
             @media (min-width: 1000px) {
-                transform: translateX(-1.25em);
+                transform: translateX(-4em);
                 letter-spacing: 0;
             }
         }
 
         .discount {
             display: inline-block;
-            border-radius: 1em;
-            transform: translateX(1em);
+            border-radius: 10px;
             font-size: 20px;
-            padding: 4px 15px;
-            letter-spacing: 0px;
+            padding: 4px 10px;
             font-weight: 800;
             background-color: map-get(d.$color-bucket, "Discount Background");
             color: map-get(d.$color-bucket, "Discount Text");
@@ -305,18 +306,22 @@ main {
 
             @media (min-width: 1000px) {
                 font-size: 10px;
-                padding: 2px;
+                border-radius: 10px;
+                padding: 0px;
+                transform: translateX(-40px);
 
                 &::after {
                     content: "25% discount";
-                    height: 100%;
-                    width: max-content;
                     position: absolute;
                     inset: 0;
+                    width: 6.9em;
+                    height: 1.5em;
                     z-index: 2;
                     background-color: hsl(14, 92%, 95%);
-                    padding: 2px 8px;
+                    padding: 1.5px 6px;
                     border-radius: 2em;
+                    letter-spacing: 0px;
+                    transform: translateX(-11px);
                 }
             }
 
@@ -327,12 +332,27 @@ main {
         border-top: 1.5px solid map-get(d.$color-bucket, "Toggle Background");
         padding-top: 2.7em;
 
+        @media (min-width: 1000px) {
+            padding-top: 0em;
+            margin-top: 1em;
+            padding-top: 1.85em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 2.7em;
+            padding-bottom: 1.9em;
+        }
 
         .features {
             color: map-get(d.$color-bucket, "Text");
             display: flex;
             flex-direction: column;
             gap: 0.55em;
+
+            @media (min-width: 1000px) {
+                padding-left: 2.9em;
+                gap: 0.1em;
+            }
 
             span {
                 text-transform: none;
@@ -343,9 +363,17 @@ main {
                 align-items: center;
                 justify-content: center;
 
+                @media (min-width: 1000px) {
+                    justify-content: flex-start;
+                    font-size: 12px;
+                    gap: 0;
+                }
+
                 svg {
                     display: block;
                     transform: translate(-12px);
+
+                    @media (min-width: 1000px) {}
                 }
             }
 
@@ -353,19 +381,16 @@ main {
         }
 
         .button-container {
-            padding: 3.6em 0;
-            padding-right: 5px;
-            padding-bottom: 4em;
-
             button {
                 border: 0;
                 background-color: map-get(d.$color-bucket, "Text & CTA Background");
-                width: 14.2em;
-                height: 3.4em;
-                font-size: 1.5rem;
+                font-size: 12px;
                 font-weight: 800;
                 border-radius: 2em;
                 color: map-get(d.$color-bucket, "CTA Text");
+                padding-top: 1em;
+                padding-bottom: 1em;
+                width: 14em;
 
                 &:hover {
                     cursor: pointer;

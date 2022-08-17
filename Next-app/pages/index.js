@@ -62,9 +62,9 @@ export default function App() {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="45"
-                  viewBox="0 -6 15 20"
+                  width="25"
+                  height="25"
+                  viewBox="-4 -9 10 25"
                 >
                   <path
                     fill="none"
@@ -78,9 +78,9 @@ export default function App() {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="45"
-                  viewBox="0 -6 15 20"
+                  width="25"
+                  height="25"
+                  viewBox="-4 -9 10 25"
                 >
                   <path
                     fill="none"
@@ -94,9 +94,9 @@ export default function App() {
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="45"
-                  height="45"
-                  viewBox="0 -6 15 20"
+                  width="25"
+                  height="25"
+                  viewBox="-4 -9 10 25"
                 >
                   <path
                     fill="none"
