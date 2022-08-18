@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 export default function App() {
   const [defaultValue, setValue] = useState("3");
 
