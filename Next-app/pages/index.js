@@ -100,7 +100,7 @@ export default function App() {
             </span>
           </header>
           <div className="slider">
-            <label for="input"></label>
+            <label htmlFor="input"></label>
             <input
               type="range"
               min={"1"}
