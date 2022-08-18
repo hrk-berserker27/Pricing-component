@@ -1,5 +1,8 @@
 import Head from "next/head";
 export default function App() {
+  const handleChange = () => {
+    console.log("hello");
+  };
   return (
     <>
       <Head>
@@ -34,26 +37,13 @@ export default function App() {
             </span>
           </header>
           <div className="slider">
-            <div className="bar"></div>
-            <span className="svg-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="-2 0 55 40"
-              >
-                <g fill="#80FFF3" fillRule="evenodd">
-                  <path d="M16 2.558v7.884a1 1 0 001.735.679l3.639-3.943a1 1 0 000-1.356l-3.64-3.943A1 1 0 0016 2.558zM6 2.558v7.884a1 1 0 01-1.735.679L.626 7.178a1 1 0 010-1.356l3.64-3.943A1 1 0 016 2.558z" />
-                </g>
-              </svg>
-            </span>
+            <input type="range" onChange={handleChange} />
           </div>
           <div className="toggle-container">
             <span>Monthly Billing</span>
             <div className="toggle">
               <div className="circle"></div>
             </div>
-            <div className="slider"></div>
             <span className="billing">Yearly Billing</span>
             <span className="discount">-25%</span>
           </div>
