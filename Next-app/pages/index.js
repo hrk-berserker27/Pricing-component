@@ -100,12 +100,14 @@ export default function App() {
             </span>
           </header>
           <div className="slider">
+            <label for="input"></label>
             <input
               type="range"
               min={"1"}
               max={"5"}
               value={defaultValue}
               onChange={handleChange}
+              id="input"
             />
           </div>
           <div className="toggle-container">
