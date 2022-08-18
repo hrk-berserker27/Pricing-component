@@ -186,6 +186,9 @@ main {
             -webkit-appearance: none;
             width: calc(100% - 7em);
 
+            &:focus {
+                outline: none;
+            }
 
             &::-webkit-slider-runnable-track {
                 width: 100%;
@@ -238,15 +241,18 @@ main {
                 cursor: pointer;
                 -webkit-appearance: none;
                 margin-top: -16.5px;
+                @include d.toggleShadow;
 
                 &:hover {
                     cursor: -webkit-grab;
                     cursor: grab;
+                    filter: brightness(115%) drop-shadow(0px 10px 5px hsl(174, 86%, 75%));
                 }
 
                 &:active {
                     cursor: -webkit-grabbing;
                     cursor: grabbing;
+                    @include d.toggleShadow;
                 }
             }
 
@@ -315,6 +321,18 @@ main {
                 padding-left: 3px;
                 height: 1.7em;
                 transform: translateX(-3.3em) translateY(1px);
+
+
+            }
+
+            &:hover {
+                background-color: map-get(d.$color-bucket, "Slider Background");
+                filter: contrast(150%) drop-shadow(1px 1px 5px hsl(174, 86%, 75%));
+                cursor: pointer;
+
+                .circle {
+                    background-color: map-get(d.$color-bucket, "Toggle Background");
+                }
             }
 
             .circle {
@@ -324,6 +342,14 @@ main {
                 border-radius: 1em;
                 background-color: map-get(d.$color-bucket, "Empty Slider Bar");
                 border-color: map-get(d.$color-bucket, "Text");
+                transition: transform ease 500ms;
+                cursor: pointer;
+
+
+            }
+
+            .move {
+                transform: translateX(2em);
             }
         }
 

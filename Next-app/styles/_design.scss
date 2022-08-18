@@ -27,3 +27,7 @@ $weight-category: (
 @mixin font-weight($weight) {
     font-weight: map-get($weight-category, $weight);
 }
+
+@mixin toggleShadow {
+    filter: drop-shadow(0px 10px 5px hsl(174, 86%, 75%));
+}
